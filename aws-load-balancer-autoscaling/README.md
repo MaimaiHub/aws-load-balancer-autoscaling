@@ -4,14 +4,18 @@ This project demonstrates how to deploy a scalable web application using AWS ser
 
 ## Architecture
 
+This architecture demonstrates a scalable web application deployed on AWS.
+Traffic from the Internet is routed through an Application Load Balancer (ALB),
+which forwards requests to EC2 instances managed by an Auto Scaling Group.
+
 ![Architecture](architecture.png)
 
 ## AWS Services Used
 
-Amazon EC2
-Application Load Balancer
-Target Group
-Auto Scaling Group
+- Amazon EC2
+- Application Load Balancer
+- Target Group
+- Auto Scaling Group
 
 ## Architecture Flow
 
@@ -33,3 +37,9 @@ Internet → Application Load Balancer → Target Group → Auto Scaling Group �
 
 ### Web Application (Hello World)
 ![Hello World](screenshots/hello-world.png)
+
+## Features
+- High availability using Auto Scaling
+- Load balancing with Application Load Balancer
+- Health checks using Target Group
+- Scalable EC2 web servers
